@@ -1,6 +1,6 @@
 {
   "name": "git-all-tags",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get all git tags of your repository in reverse chronological order",
   "homepage": "https://github.com/stevemao/git-all-tags",
   "author": {
