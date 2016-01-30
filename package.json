@@ -1,0 +1,44 @@
+{
+  "name": "git-all-tags",
+  "version": "0.0.0",
+  "description": "Get all git tags of your repository in reverse chronological order",
+  "homepage": "https://github.com/stevemao/git-all-tags",
+  "author": {
+    "name": "Steve Mao",
+    "email": "maochenyan@gmail.com",
+    "url": "https://github.com/stevemao"
+  },
+  "repository": "stevemao/git-all-tags",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "git-all-tags",
+    "order",
+    "tag",
+    "git-tag",
+    "git"
+  ],
+  "dependencies": {
+    "meow": "^3.7.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "git-dummy-commit": "^1.2.0",
+    "istanbul": "^0.4.2",
+    "jscs": "^2.9.0",
+    "jshint": "^2.9.1",
+    "mocha": "*",
+    "shelljs": "^0.5.3"
+  },
+  "scripts": {
+    "coverage": "istanbul cover _mocha -- -R spec && rm -rf ./coverage",
+    "lint": "jshint *.js --exclude node_modules && jscs *.js",
+    "test": "npm run-script lint && mocha --timeout 10000"
+  },
+  "bin": {
+    "git-all-tags": "cli.js"
+  }
+}
